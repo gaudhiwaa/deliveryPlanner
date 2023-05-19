@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delivery Planner</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Delivery Planner</h1>
+  
+  <div id="input-container">
+    <label for="graph-input">Enter the graph</label>
+    <textarea id="graph-input" rows="5" cols="50" placeholder="Enter the graph in the format: node1-node2:distance"></textarea>
+    <br>
+    <label for="start-node">Start Node:</label>
+    <input type="text" id="start-node" placeholder="Enter the start node">
+    <br>
+    <label for="end-node">End Node:</label>
+    <input type="text" id="end-node" placeholder="Enter the end node">
+    <br>
+    <button onclick="findShortestPath()">Find Shortest Path</button>
+  </div>
+
+  <div id="output-container">
+    <h2>Shortest Path:</h2>
+    <p id="shortest-path"></p>
+    <h2>Total Distance:</h2>
+    <p id="total-distance"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
